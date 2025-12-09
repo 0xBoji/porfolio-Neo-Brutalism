@@ -34,14 +34,6 @@ export default function Portfolio() {
             </li>
             <li>
               <a
-                href="#opensource"
-                className="brutalist-btn bg-[#88FF00] px-4 py-2 text-sm md:text-base inline-block"
-              >
-                Open Source
-              </a>
-            </li>
-            <li>
-              <a
                 href="#awards"
                 className="brutalist-btn bg-[#FF6B9D] px-4 py-2 text-sm md:text-base inline-block"
               >
@@ -62,6 +54,14 @@ export default function Portfolio() {
                 className="brutalist-btn bg-white px-4 py-2 text-sm md:text-base inline-block"
               >
                 Certifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="#opensource"
+                className="brutalist-btn bg-[#88FF00] px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Open Source
               </a>
             </li>
           </ul>
@@ -420,16 +420,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Open Source Section */}
-      <section id="opensource" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
-            💻 Open Source Contributions
-          </h2>
-          <OpenSourceRepos />
-        </div>
-      </section>
-
       {/* Hackathons & Awards */}
       <section id="awards" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
@@ -566,6 +556,16 @@ export default function Portfolio() {
               <p className="text-lg font-bold mt-2">2025 - 2028</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Open Source Section */}
+      <section id="opensource" className="px-4 py-8 md:px-8 lg:px-16 pb-16 scroll-mt-20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
+            💻 Open Source Contributions
+          </h2>
+          <OpenSourceRepos />
         </div>
       </section>
 

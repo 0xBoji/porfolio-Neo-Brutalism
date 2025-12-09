@@ -47,7 +47,7 @@ export default function OpenSourceRepos() {
   if (loading) {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {[1, 2, 3, 4].map((i) => (
+        {[1, 2, 3, 4, 5].map((i) => (
           <div key={i} className="brutalist-card bg-white p-6 animate-pulse">
             <div className="h-6 bg-gray-200 rounded w-3/4 mb-4"></div>
             <div className="h-4 bg-gray-200 rounded w-full mb-2"></div>
