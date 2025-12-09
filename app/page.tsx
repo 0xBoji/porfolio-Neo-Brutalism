@@ -334,6 +334,10 @@ export default function Portfolio() {
                   <Image src="/icons/jenkins.svg" alt="Jenkins" width={20} height={20} className="inline-block" />
                   Jenkins
                 </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/gitlab.svg" alt="GitLab" width={20} height={20} className="inline-block" />
+                  GitLab CI/CD
+                </span>
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
                   Pulumi
                 </span>
