@@ -33,14 +33,6 @@ export default function Portfolio() {
             </li>
             <li>
               <a
-                href="#certifications"
-                className="brutalist-btn bg-[#88FF00] px-4 py-2 text-sm md:text-base inline-block"
-              >
-                Certifications
-              </a>
-            </li>
-            <li>
-              <a
                 href="#awards"
                 className="brutalist-btn bg-[#FF6B9D] px-4 py-2 text-sm md:text-base inline-block"
               >
@@ -50,9 +42,17 @@ export default function Portfolio() {
             <li>
               <a
                 href="#education"
-                className="brutalist-btn bg-white px-4 py-2 text-sm md:text-base inline-block"
+                className="brutalist-btn bg-[#88FF00] px-4 py-2 text-sm md:text-base inline-block"
               >
                 Education
+              </a>
+            </li>
+            <li>
+              <a
+                href="#certifications"
+                className="brutalist-btn bg-white px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Certifications
               </a>
             </li>
           </ul>
@@ -345,21 +345,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Certifications */}
-      <section id="certifications" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
-            🏆 Certifications
-          </h2>
-          <div className="brutalist-card bg-[#C77DFF] p-8">
-            <div className="bg-white border-4 border-black p-6">
-              <h3 className="text-2xl font-black uppercase">AWS Certified Solutions Architect - Associate</h3>
-              <p className="text-lg font-bold mt-2">2025</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Hackathons & Awards */}
       <section id="awards" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
@@ -471,6 +456,21 @@ export default function Portfolio() {
               <h3 className="text-2xl font-black uppercase">Advanced Diploma in Software Engineering</h3>
               <p className="text-lg font-bold mt-2">Aptech Aprotrain Computer</p>
               <p className="font-bold">2022 - 2025 | GPA: 4.0/4.0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section id="certifications" className="px-4 py-8 md:px-8 lg:px-16 pb-16 scroll-mt-20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
+            🏆 Certifications
+          </h2>
+          <div className="brutalist-card bg-[#C77DFF] p-8">
+            <div className="bg-white border-4 border-black p-6">
+              <h3 className="text-2xl font-black uppercase">AWS Certified Solutions Architect - Associate</h3>
+              <p className="text-lg font-bold mt-2">2025</p>
             </div>
           </div>
         </div>
