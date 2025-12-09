@@ -22,8 +22,8 @@ const REPOS = [
     customDescription: 'Comprehensive AWS Solutions Architect Associate certification practice resources. Includes hands-on labs, architecture diagrams, best practices, and real-world scenarios for exam preparation.'
   },
   { 
-    owner: 'awsdocs', 
-    name: 'awsdocs',
+    owner: 'A', 
+    name: 'aws-doc-sdk-examples',
     customDescription: 'Contributing to official AWS SDK documentation with Go code examples. Provides practical, well-documented examples for AWS services helping developers integrate AWS into their Go applications.'
   },
   { 
