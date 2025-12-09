@@ -3,6 +3,62 @@ import Image from "next/image";
 export default function Portfolio() {
   return (
     <div className="min-h-screen">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 bg-white border-b-4 border-black shadow-[0_8px_0_0_#000]">
+        <div className="max-w-6xl mx-auto px-4 py-4">
+          <ul className="flex flex-wrap gap-2 md:gap-4 justify-center items-center">
+            <li>
+              <a
+                href="#profile"
+                className="brutalist-btn bg-[#FFE500] px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Profile
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experience"
+                className="brutalist-btn bg-[#C77DFF] px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Experience
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                className="brutalist-btn bg-[#00D4FF] px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="#certifications"
+                className="brutalist-btn bg-[#88FF00] px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Certifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="#awards"
+                className="brutalist-btn bg-[#FF6B9D] px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Awards
+              </a>
+            </li>
+            <li>
+              <a
+                href="#education"
+                className="brutalist-btn bg-white px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Education
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="px-4 py-16 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto">
@@ -62,7 +118,7 @@ export default function Portfolio() {
       </section>
 
       {/* Profile Section */}
-      <section className="px-4 py-8 md:px-8 lg:px-16">
+      <section id="profile" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
             🎯 Profile
@@ -76,7 +132,7 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section className="px-4 py-8 md:px-8 lg:px-16">
+      <section id="experience" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
             💼 Experience
@@ -184,7 +240,7 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section className="px-4 py-8 md:px-8 lg:px-16">
+      <section id="skills" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
             🛠️ Skills
@@ -290,7 +346,7 @@ export default function Portfolio() {
       </section>
 
       {/* Certifications */}
-      <section className="px-4 py-8 md:px-8 lg:px-16">
+      <section id="certifications" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
             🏆 Certifications
@@ -305,7 +361,7 @@ export default function Portfolio() {
       </section>
 
       {/* Hackathons & Awards */}
-      <section className="px-4 py-8 md:px-8 lg:px-16">
+      <section id="awards" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
             🏖️ Honors & Awards
@@ -399,7 +455,7 @@ export default function Portfolio() {
       </section>
 
       {/* Education */}
-      <section className="px-4 py-8 md:px-8 lg:px-16 pb-16">
+      <section id="education" className="px-4 py-8 md:px-8 lg:px-16 pb-16 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
             🎓 Education
