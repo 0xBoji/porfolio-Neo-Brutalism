@@ -14,7 +14,7 @@ const REPOS = [
   { 
     owner: '0xBoji', 
     name: 'aster-connector-go',
-    customDescription: 'High-performance Go connector for Aster Network. Enables efficient blockchain interactions with type-safe APIs, transaction building, and event streaming for Polkadot-based applications.'
+    customDescription: 'Go SDK for Aster - a next-generation decentralized perpetual exchange. Provides seamless integration for perpetual trading, spot trading, and order book interactions with low fees and deep liquidity.'
   },
   { 
     owner: '0xBoji', 
