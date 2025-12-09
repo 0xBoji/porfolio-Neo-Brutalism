@@ -22,9 +22,14 @@ const REPOS = [
     customDescription: 'Comprehensive AWS Solutions Architect Associate certification practice resources. Includes hands-on labs, architecture diagrams, best practices, and real-world scenarios for exam preparation.'
   },
   { 
-    owner: '0xBoji', 
-    name: 'aws-doc-sdk-examples',
+    owner: 'awsdocs', 
+    name: 'awsdocs',
     customDescription: 'Contributing to official AWS SDK documentation with Go code examples. Provides practical, well-documented examples for AWS services helping developers integrate AWS into their Go applications.'
+  },
+  { 
+    owner: 'vbi-academy', 
+    name: 'rust-developer-vietnam',
+    customDescription: 'Contributing to Rust Developer Vietnam - OpenEdu101 by VBI Academy. Community-driven Rust knowledge sharing from beginner to advanced topics, fostering open-source collaboration and technical discussion among Vietnamese developers.'
   },
 ];
 
