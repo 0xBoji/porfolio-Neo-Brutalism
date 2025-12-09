@@ -356,8 +356,13 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Hyperliquid - 2025 */}
             <div className="brutalist-card bg-white p-0 overflow-hidden">
-              <div className="h-48 relative border-b-4 border-black bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-                <span className="text-6xl">💎</span>
+              <div className="h-48 relative border-b-4 border-black">
+                <Image
+                  src="/hyperliquid-hackathon.png"
+                  alt="Hyperliquid Hackathon"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-black uppercase mb-2">💵 $2000 Bounty</h3>
@@ -380,9 +385,12 @@ export default function Portfolio() {
             {/* Aptos Collision - 2024 */}
             <div className="brutalist-card bg-[#FFE500] p-0 overflow-hidden">
               <div className="h-48 relative border-b-4 border-black">
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
-                  <span className="text-6xl">🥇</span>
-                </div>
+                <Image
+                  src="/aptos-hackathon.png"
+                  alt="Aptos Collision Hackathon"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-black uppercase mb-2">1st Place - The Unexpected</h3>
