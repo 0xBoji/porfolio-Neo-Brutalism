@@ -194,12 +194,23 @@ export default function Portfolio() {
               <h3 className="text-xl font-black mb-4 uppercase bg-[#FFE500] border-4 border-black inline-block px-4 py-2">
                 Languages
               </h3>
-              <div className="flex flex-wrap gap-2 mt-4">
-                {['Golang', 'Python', 'Rust', 'Javascript'].map((skill) => (
-                  <span key={skill} className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
-                    {skill}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-3 mt-4">
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/golang.svg" alt="Go" width={20} height={20} className="inline-block" />
+                  Golang
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/python.svg" alt="Python" width={20} height={20} className="inline-block" />
+                  Python
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/rust.svg" alt="Rust" width={20} height={20} className="inline-block" />
+                  Rust
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/javascript.svg" alt="JavaScript" width={20} height={20} className="inline-block" />
+                  Javascript
+                </span>
               </div>
             </div>
 
@@ -207,12 +218,23 @@ export default function Portfolio() {
               <h3 className="text-xl font-black mb-4 uppercase bg-[#00D4FF] border-4 border-black inline-block px-4 py-2">
                 Cloud & Containers
               </h3>
-              <div className="flex flex-wrap gap-2 mt-4">
-                {['AWS', 'Docker', 'K8s', 'Azure'].map((skill) => (
-                  <span key={skill} className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
-                    {skill}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-3 mt-4">
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/aws.svg" alt="AWS" width={20} height={20} className="inline-block" />
+                  AWS
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/docker.svg" alt="Docker" width={20} height={20} className="inline-block" />
+                  Docker
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/kubernetes.svg" alt="Kubernetes" width={20} height={20} className="inline-block" />
+                  K8s
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/azure.svg" alt="Azure" width={20} height={20} className="inline-block" />
+                  Azure
+                </span>
               </div>
             </div>
 
@@ -220,12 +242,21 @@ export default function Portfolio() {
               <h3 className="text-xl font-black mb-4 uppercase bg-[#88FF00] border-4 border-black inline-block px-4 py-2">
                 System & Monitoring
               </h3>
-              <div className="flex flex-wrap gap-2 mt-4">
-                {['Grafana', 'Prometheus', 'Loki', 'CloudWatch'].map((skill) => (
-                  <span key={skill} className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
-                    {skill}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-3 mt-4">
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/grafana.svg" alt="Grafana" width={20} height={20} className="inline-block" />
+                  Grafana
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/prometheus.svg" alt="Prometheus" width={20} height={20} className="inline-block" />
+                  Prometheus
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  Loki
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  CloudWatch
+                </span>
               </div>
             </div>
 
@@ -233,12 +264,25 @@ export default function Portfolio() {
               <h3 className="text-xl font-black mb-4 uppercase bg-[#FF6B9D] border-4 border-black inline-block px-4 py-2">
                 DevOps & IaC
               </h3>
-              <div className="flex flex-wrap gap-2 mt-4">
-                {['Terraform', 'RabbitMQ', 'Jenkins', 'Pulumi', 'Linux Admin'].map((skill) => (
-                  <span key={skill} className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
-                    {skill}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-3 mt-4">
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/terraform.svg" alt="Terraform" width={20} height={20} className="inline-block" />
+                  Terraform
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  RabbitMQ
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/jenkins.svg" alt="Jenkins" width={20} height={20} className="inline-block" />
+                  Jenkins
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  Pulumi
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/linux.svg" alt="Linux" width={20} height={20} className="inline-block" />
+                  Linux Admin
+                </span>
               </div>
             </div>
           </div>
