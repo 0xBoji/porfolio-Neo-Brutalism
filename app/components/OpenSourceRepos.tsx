@@ -19,7 +19,7 @@ export default function OpenSourceRepos() {
   useEffect(() => {
     async function fetchRepos() {
       try {
-        const response = await fetch('/api/github-repos');
+        const response = await fetch('/api/v1/github-repos');
         if (!response.ok) {
           throw new Error('Failed to fetch repos');
         }
