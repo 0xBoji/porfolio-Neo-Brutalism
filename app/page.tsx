@@ -470,7 +470,7 @@ export default function Portfolio() {
           <div className="brutalist-card bg-[#C77DFF] p-8">
             <div className="bg-white border-4 border-black p-6">
               <h3 className="text-2xl font-black uppercase">AWS Certified Solutions Architect - Associate</h3>
-              <p className="text-lg font-bold mt-2">2025</p>
+              <p className="text-lg font-bold mt-2">2025 - 2028</p>
             </div>
           </div>
         </div>
