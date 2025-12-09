@@ -147,7 +147,7 @@ export default function Portfolio() {
                   <p className="text-sm">Ultra-fast, developer-incentivized Layer-1 blockchain compatible with EVM</p>
                 </div>
                 <div className="text-right">
-                  <p className="font-bold">Oct 2025 - Dec 2025</p>
+                  <p className="font-bold">Sep 2025 - Jan 2026</p>
                   <p className="text-sm">Remote, USA</p>
                 </div>
               </div>
