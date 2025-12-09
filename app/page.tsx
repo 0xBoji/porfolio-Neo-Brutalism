@@ -269,6 +269,10 @@ export default function Portfolio() {
                   <Image src="/icons/javascript.svg" alt="JavaScript" width={20} height={20} className="inline-block" />
                   Javascript
                 </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/bash.svg" alt="Bash" width={20} height={20} className="inline-block" />
+                  Bash/Shell
+                </span>
               </div>
             </div>
 
@@ -324,26 +328,82 @@ export default function Portfolio() {
               </h3>
               <div className="flex flex-wrap gap-3 mt-4">
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
-                  <Image src="/icons/terraform.svg" alt="Terraform" width={20} height={20} className="inline-block" />
-                  Terraform
+                  <Image src="/icons/git.svg" alt="Git" width={20} height={20} className="inline-block" />
+                  Git
                 </span>
-                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
-                  RabbitMQ
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/github.svg" alt="GitHub" width={20} height={20} className="inline-block" />
+                  GitHub Actions
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/gitlab.svg" alt="GitLab" width={20} height={20} className="inline-block" />
+                  GitLab CI/CD
                 </span>
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
                   <Image src="/icons/jenkins.svg" alt="Jenkins" width={20} height={20} className="inline-block" />
                   Jenkins
                 </span>
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
-                  <Image src="/icons/gitlab.svg" alt="GitLab" width={20} height={20} className="inline-block" />
-                  GitLab CI/CD
+                  <Image src="/icons/terraform.svg" alt="Terraform" width={20} height={20} className="inline-block" />
+                  Terraform
                 </span>
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
                   Pulumi
                 </span>
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/ansible.svg" alt="Ansible" width={20} height={20} className="inline-block" />
+                  Ansible
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/argocd.svg" alt="ArgoCD" width={20} height={20} className="inline-block" />
+                  ArgoCD
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
                   <Image src="/icons/linux.svg" alt="Linux" width={20} height={20} className="inline-block" />
                   Linux Admin
+                </span>
+              </div>
+            </div>
+
+            <div className="brutalist-card bg-white p-6">
+              <h3 className="text-xl font-black mb-4 uppercase bg-[#C77DFF] border-4 border-black inline-block px-4 py-2">
+                Database & Messaging
+              </h3>
+              <div className="flex flex-wrap gap-3 mt-4">
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/postgresql.svg" alt="PostgreSQL" width={20} height={20} className="inline-block" />
+                  PostgreSQL
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/redis.svg" alt="Redis" width={20} height={20} className="inline-block" />
+                  Redis
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  RabbitMQ
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  gRPC
+                </span>
+              </div>
+            </div>
+
+            <div className="brutalist-card bg-white p-6">
+              <h3 className="text-xl font-black mb-4 uppercase bg-[#FFE500] border-4 border-black inline-block px-4 py-2">
+                Web & Networking
+              </h3>
+              <div className="flex flex-wrap gap-3 mt-4">
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
+                  <Image src="/icons/nginx.svg" alt="Nginx" width={20} height={20} className="inline-block" />
+                  Nginx
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  VPC/Subnets
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  Load Balancers
+                </span>
+                <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
+                  Security Groups
                 </span>
               </div>
             </div>
