@@ -427,6 +427,17 @@ export default function Portfolio() {
             🏖️ Honors & Awards
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Saga Hackathon - 2025 */}
+            <div className="brutalist-card bg-[#FFE500] p-0 overflow-hidden">
+              <div className="h-48 relative border-b-4 border-black bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                <span className="text-6xl">🏆</span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-black uppercase mb-2">🥇 Champion</h3>
+                <p className="font-bold">Saga Hackathon Vietnam 2025</p>
+              </div>
+            </div>
+
             {/* Hyperliquid - 2025 */}
             <div className="brutalist-card bg-white p-0 overflow-hidden">
               <div className="h-48 relative border-b-4 border-black">
@@ -455,6 +466,17 @@ export default function Portfolio() {
               </div>
             </div>
 
+            {/* Cardano - 2025 */}
+            <div className="brutalist-card bg-[#C77DFF] p-0 overflow-hidden">
+              <div className="h-48 relative border-b-4 border-black bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                <span className="text-6xl">💎</span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up</h3>
+                <p className="font-bold">Cardano Hackathon Vietnam 2025</p>
+              </div>
+            </div>
+
             {/* Aptos Collision - 2024 */}
             <div className="brutalist-card bg-[#FFE500] p-0 overflow-hidden">
               <div className="h-48 relative border-b-4 border-black">
@@ -468,6 +490,28 @@ export default function Portfolio() {
               <div className="p-6">
                 <h3 className="text-xl font-black uppercase mb-2">1st Place - The Unexpected</h3>
                 <p className="font-bold">Aptos Collision Hackathon Global 2024</p>
+              </div>
+            </div>
+
+            {/* Polkadot Vietnam - 2024 */}
+            <div className="brutalist-card bg-[#FF6B9D] p-0 overflow-hidden">
+              <div className="h-48 relative border-b-4 border-black bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center">
+                <span className="text-6xl">⚫</span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up</h3>
+                <p className="font-bold">Polkadot Hackathon Vietnam 2024</p>
+              </div>
+            </div>
+
+            {/* Algorand Vietnam - 2024 */}
+            <div className="brutalist-card bg-white p-0 overflow-hidden">
+              <div className="h-48 relative border-b-4 border-black bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center">
+                <span className="text-6xl">◯</span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up</h3>
+                <p className="font-bold">Algorand Hackathon Vietnam 2024</p>
               </div>
             </div>
 
