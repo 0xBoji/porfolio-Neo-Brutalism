@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HackathonAwards from './components/HackathonAwards';
 import ThailandJourney from './components/ThailandJourney';
+import ProfessionalJourney from './components/ProfessionalJourney';
 import OpenSourceRepos from "./components/OpenSourceRepos";
 
 export default function Portfolio() {
@@ -447,6 +448,16 @@ export default function Portfolio() {
             🌏 Developer Connect Journey
           </h2>
           <ThailandJourney />
+        </div>
+      </section>
+
+      {/* Professional Journey */}
+      <section id="professional-journey" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20 bg-gradient-to-br from-pink-50 to-purple-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
+            💼 Professional Growth
+          </h2>
+          <ProfessionalJourney />
         </div>
       </section>
 
