@@ -29,7 +29,7 @@ const journeySteps: JourneyStep[] = [
     company: 'GFI',
     type: 'work',
     title: 'Software Engineer',
-    period: '2024 - Present',
+    period: '2024 - 2025',
     description: 'Working as a full-time Software Engineer, contributing to enterprise-level projects and collaborating with international teams. Recognized for outstanding performance and teamwork.',
     images: ['/gfi.jpg', '/gfi-2.jpg', '/gfi-awards.jpg', '/gfi-awards-2.jpg'],
     achievements: [
