@@ -54,7 +54,7 @@ const journeySteps: JourneyStep[] = [
     title: 'Enterprise Process Study Visit',
     period: '2023',
     description: 'Explored enterprise-level software development processes and methodologies at FPT Information System. Learned about large-scale system architecture, agile practices, and corporate development workflows.',
-    images: ['/fpt-is.jpg'],
+    images: ['/fpt-is.jpg', '/fpt-is-2.jpg'],
   },
   {
     id: 'fpt-software-visit',

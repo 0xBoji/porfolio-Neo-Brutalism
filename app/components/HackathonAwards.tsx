@@ -179,6 +179,15 @@ export default function HackathonAwards() {
                 </div>
               </div>
             )}
+            {/* Globe Icon for Global hackathons */}
+            {hackathon.type === 'global' && (
+              <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-full border-4 border-black bg-[#00D4FF] flex items-center justify-center">
+                <svg viewBox="0 0 24 24" className="w-7 h-7" fill="none" stroke="white" strokeWidth="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+            )}
             <div
               className={`h-48 relative border-b-4 border-black ${
                 hackathon.useGradient
