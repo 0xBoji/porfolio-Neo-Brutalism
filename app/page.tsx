@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HackathonAwards from './components/HackathonAwards';
+import ThailandJourney from './components/ThailandJourney';
 import OpenSourceRepos from "./components/OpenSourceRepos";
 
 export default function Portfolio() {
@@ -39,6 +40,14 @@ export default function Portfolio() {
                 className="brutalist-btn bg-[#FF6B9D] px-4 py-2 text-sm md:text-base inline-block"
               >
                 Awards
+              </a>
+            </li>
+            <li>
+              <a
+                href="#thailand-journey"
+                className="brutalist-btn bg-[#00D4FF] px-4 py-2 text-sm md:text-base inline-block"
+              >
+                Journey
               </a>
             </li>
             <li>
@@ -428,6 +437,16 @@ export default function Portfolio() {
             🏖️ Honors & Awards
           </h2>
           <HackathonAwards />
+        </div>
+      </section>
+
+      {/* Thailand Journey */}
+      <section id="thailand-journey" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
+            🌏 Hackathon Journey
+          </h2>
+          <ThailandJourney />
         </div>
       </section>
 

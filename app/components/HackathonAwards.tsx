@@ -56,6 +56,15 @@ const hackathons: Hackathon[] = [
     bgColor: 'bg-[#C77DFF]',
   },
   {
+    id: 'sui-thailand-2024',
+    type: 'global',
+    image: '/sui-hacker-house-thailand-firstday-1.png',
+    title: '🏆 Winner - $2,000',
+    name: 'Sui Hacker House Thailand 2024',
+    subtitle: '2-week journey during Devcon7 Bangkok',
+    bgColor: 'bg-[#00D4FF]',
+  },
+  {
     id: 'aptos-2024',
     type: 'global',
     image: '/aptos-hackathon.png',
