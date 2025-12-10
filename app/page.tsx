@@ -117,12 +117,12 @@ export default function Portfolio() {
                     📧 Email
                   </a>
                   <a
-                    href="https://linktr.ee/pichtran"
+                    href="https://github.com/0xBoji"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="brutalist-btn bg-[#00D4FF] px-6 py-3 inline-block"
                   >
-                    🔗 Links
+                    👨‍💻 GitHub
                   </a>
                   <a
                     href="tel:+84918168311"
