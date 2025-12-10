@@ -145,7 +145,7 @@ export default function Portfolio() {
           </h2>
           <div className="brutalist-card bg-white p-8">
             <p className="text-lg leading-relaxed">
-              Cloud Engineer Intern with a strong backend foundation, eager to learn and contribute to building scalable, secure architectures on AWS and Kubernetes. Experienced in container orchestration, CI/CD, and observability systems. Aspiring to become a Solutions Architect, leveraging DevOps and backend experience to build reliable, cost-efficient cloud systems.
+              Cloud Engineer with a strong backend foundation, eager to learn and contribute to building scalable, secure architectures on AWS and Kubernetes. Experienced in container orchestration, CI/CD, and observability systems. Aspiring to become a Solutions Architect, leveraging DevOps and backend experience to build reliable, cost-efficient cloud systems.
               <br /><br />
               Passionate open-source contributor and active hackathon participant, consistently challenging myself through competitive coding events and collaborative team projects. Proven track record with 6 hackathon wins including 1st place at Aptos Collision, demonstrating strong problem-solving abilities and effective teamwork in high-pressure environments. Committed to continuous learning and knowledge sharing within the developer community.
             </p>

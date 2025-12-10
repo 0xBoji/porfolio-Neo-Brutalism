@@ -70,6 +70,32 @@ const journeySteps: JourneyStep[] = [
 export default function ProfessionalJourney() {
   const [expandedStep, setExpandedStep] = useState<string | null>(null);
 
+  const handleNext = (currentId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const currentIndex = journeySteps.findIndex(s => s.id === currentId);
+    if (currentIndex < journeySteps.length - 1) {
+      const nextId = journeySteps[currentIndex + 1].id;
+      setExpandedStep(nextId);
+      // Scroll to next step smoothly
+      setTimeout(() => {
+        document.getElementById(`step-${nextId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  };
+
+  const handlePrevious = (currentId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const currentIndex = journeySteps.findIndex(s => s.id === currentId);
+    if (currentIndex > 0) {
+      const prevId = journeySteps[currentIndex - 1].id;
+      setExpandedStep(prevId);
+      // Scroll to previous step smoothly
+      setTimeout(() => {
+        document.getElementById(`step-${prevId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  };
+
   const getTypeLabel = (type: string) => {
     switch (type) {
       case 'work':
@@ -97,11 +123,12 @@ export default function ProfessionalJourney() {
 
       {/* Journey Timeline */}
       <div className="space-y-4">
-        {journeySteps.map((step) => {
+        {journeySteps.map((step, index) => {
           const typeInfo = getTypeLabel(step.type);
           return (
             <div
               key={step.id}
+              id={`step-${step.id}`}
               className="brutalist-card bg-white p-6 cursor-pointer hover:bg-[#FDFBF7] transition-colors"
               onClick={() => setExpandedStep(expandedStep === step.id ? null : step.id)}
             >
@@ -120,9 +147,15 @@ export default function ProfessionalJourney() {
                     {step.title}
                   </p>
                 </div>
-                <span className="text-2xl font-black">
-                  {expandedStep === step.id ? '−' : '+'}
-                </span>
+                <div className="flex items-center gap-2">
+                  {expandedStep === step.id ? (
+                    <span className="text-2xl font-black">−</span>
+                  ) : (
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
+                </div>
               </div>
 
               {expandedStep === step.id && (
@@ -166,6 +199,43 @@ export default function ProfessionalJourney() {
                       ))}
                     </div>
                   )}
+
+                  {/* Navigation Buttons */}
+                  <div className="flex justify-between items-center mt-6 pt-4 border-t-4 border-black">
+                    <button
+                      onClick={(e) => handlePrevious(step.id, e)}
+                      disabled={index === 0}
+                      className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                        index === 0 
+                          ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                          : 'bg-[#FFE500] hover:bg-[#FFD700]'
+                      }`}
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                      </svg>
+                      <span className="font-black">Previous</span>
+                    </button>
+                    
+                    <span className="text-sm font-bold">
+                      Step {index + 1} of {journeySteps.length}
+                    </span>
+                    
+                    <button
+                      onClick={(e) => handleNext(step.id, e)}
+                      disabled={index === journeySteps.length - 1}
+                      className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                        index === journeySteps.length - 1
+                          ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                          : 'bg-[#00D4FF] hover:bg-[#00B8E6]'
+                      }`}
+                    >
+                      <span className="font-black">Next</span>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               )}
             </div>

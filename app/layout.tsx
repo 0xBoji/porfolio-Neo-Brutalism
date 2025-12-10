@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Tran Ngoc Hoang Pich | Cloud Engineer & Solutions Architect",
-  description: "Cloud Engineer Intern with strong backend foundation. AWS Certified Solutions Architect. Experienced in container orchestration, CI/CD, and building scalable cloud systems.",
+  description: "Cloud Engineer with strong backend foundation. AWS Certified Solutions Architect. Experienced in container orchestration, CI/CD, and building scalable cloud systems.",
   icons: {
     icon: '/icon.png',
   },

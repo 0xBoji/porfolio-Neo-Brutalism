@@ -93,6 +93,32 @@ const journeyDays: JourneyDay[] = [
 export default function ThailandJourney() {
   const [expandedDay, setExpandedDay] = useState<number | null>(null);
 
+  const handleNext = (currentDay: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const currentIndex = journeyDays.findIndex(d => d.day === currentDay);
+    if (currentIndex < journeyDays.length - 1) {
+      const nextDay = journeyDays[currentIndex + 1].day;
+      setExpandedDay(nextDay);
+      // Scroll to next day smoothly
+      setTimeout(() => {
+        document.getElementById(`day-${nextDay}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  };
+
+  const handlePrevious = (currentDay: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const currentIndex = journeyDays.findIndex(d => d.day === currentDay);
+    if (currentIndex > 0) {
+      const prevDay = journeyDays[currentIndex - 1].day;
+      setExpandedDay(prevDay);
+      // Scroll to previous day smoothly
+      setTimeout(() => {
+        document.getElementById(`day-${prevDay}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  };
+
   return (
     <div className="space-y-6">
       {/* Journey Header */}
@@ -110,9 +136,10 @@ export default function ThailandJourney() {
 
       {/* Journey Timeline */}
       <div className="space-y-4">
-        {journeyDays.map((journeyDay) => (
+        {journeyDays.map((journeyDay, index) => (
           <div
             key={journeyDay.day}
+            id={`day-${journeyDay.day}`}
             className="brutalist-card bg-white p-6 cursor-pointer hover:bg-[#FDFBF7] transition-colors"
             onClick={() => setExpandedDay(expandedDay === journeyDay.day ? null : journeyDay.day)}
           >
@@ -120,9 +147,15 @@ export default function ThailandJourney() {
               <h4 className="text-xl font-black uppercase">
                 📅 {journeyDay.title}
               </h4>
-              <span className="text-2xl font-black">
-                {expandedDay === journeyDay.day ? '−' : '+'}
-              </span>
+              <div className="flex items-center gap-2">
+                {expandedDay === journeyDay.day ? (
+                  <span className="text-2xl font-black">−</span>
+                ) : (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                )}
+              </div>
             </div>
             
             {expandedDay === journeyDay.day && (
@@ -152,6 +185,43 @@ export default function ThailandJourney() {
                     ))}
                   </div>
                 )}
+
+                {/* Navigation Buttons */}
+                <div className="flex justify-between items-center mt-6 pt-4 border-t-4 border-black">
+                  <button
+                    onClick={(e) => handlePrevious(journeyDay.day, e)}
+                    disabled={index === 0}
+                    className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                      index === 0 
+                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                        : 'bg-[#FFE500] hover:bg-[#FFD700]'
+                    }`}
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    <span className="font-black">Previous</span>
+                  </button>
+                  
+                  <span className="text-sm font-bold">
+                    Day {journeyDay.day} of 14
+                  </span>
+                  
+                  <button
+                    onClick={(e) => handleNext(journeyDay.day, e)}
+                    disabled={index === journeyDays.length - 1}
+                    className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                      index === journeyDays.length - 1
+                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                        : 'bg-[#00D4FF] hover:bg-[#00B8E6]'
+                    }`}
+                  >
+                    <span className="font-black">Next</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             )}
           </div>
