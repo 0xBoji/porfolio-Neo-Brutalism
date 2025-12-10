@@ -187,7 +187,7 @@ export default function ProfessionalJourney() {
                       {step.images.map((img, idx) => (
                         <div
                           key={idx}
-                          className="relative h-96 border-4 border-black overflow-hidden"
+                          className="relative h-[500px] border-4 border-black overflow-hidden"
                         >
                           <Image
                             src={img}
