@@ -311,7 +311,7 @@ export default function Portfolio() {
 
             <div className="brutalist-card bg-white p-6">
               <h3 className="text-xl font-black mb-4 uppercase bg-[#88FF00] border-4 border-black inline-block px-4 py-2">
-                System & Monitoring
+                Monitoring & Logging
               </h3>
               <div className="flex flex-wrap gap-3 mt-4">
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black flex items-center gap-2">
@@ -323,10 +323,10 @@ export default function Portfolio() {
                   Prometheus
                 </span>
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
-                  Loki
+                  Grafana Loki
                 </span>
                 <span className="bg-black text-white px-4 py-2 font-bold border-4 border-black">
-                  CloudWatch
+                  CloudWatch Logs
                 </span>
               </div>
             </div>
