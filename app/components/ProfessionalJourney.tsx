@@ -201,7 +201,11 @@ export default function ProfessionalJourney() {
                   )}
 
                   {/* Navigation Buttons */}
-                  <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-6 pt-4 border-t-4 border-black">
+                  <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4 mt-6 pt-4 border-t-4 border-black">
+                    <span className="text-sm font-bold text-center sm:hidden">
+                      Step {index + 1} of {journeySteps.length}
+                    </span>
+                    
                     <button
                       onClick={(e) => handlePrevious(step.id, e)}
                       disabled={index === 0}
@@ -217,7 +221,7 @@ export default function ProfessionalJourney() {
                       <span className="font-black">Previous</span>
                     </button>
                     
-                    <span className="text-sm font-bold order-first sm:order-none">
+                    <span className="text-sm font-bold hidden sm:block">
                       Step {index + 1} of {journeySteps.length}
                     </span>
                     

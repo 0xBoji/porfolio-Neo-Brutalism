@@ -187,7 +187,11 @@ export default function ThailandJourney() {
                 )}
 
                 {/* Navigation Buttons */}
-                <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-6 pt-4 border-t-4 border-black">
+                <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4 mt-6 pt-4 border-t-4 border-black">
+                  <span className="text-sm font-bold text-center sm:hidden">
+                    Day {journeyDay.day} of 14
+                  </span>
+                  
                   <button
                     onClick={(e) => handlePrevious(journeyDay.day, e)}
                     disabled={index === 0}
@@ -203,7 +207,7 @@ export default function ThailandJourney() {
                     <span className="font-black">Previous</span>
                   </button>
                   
-                  <span className="text-sm font-bold order-first sm:order-none">
+                  <span className="text-sm font-bold hidden sm:block">
                     Day {journeyDay.day} of 14
                   </span>
                   
