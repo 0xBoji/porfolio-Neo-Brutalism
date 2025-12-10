@@ -438,7 +438,7 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥇 Champion</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥇 Champion - $2,000</h3>
                 <p className="font-bold">Saga Hackathon Vietnam 2025</p>
               </div>
             </div>
@@ -482,7 +482,7 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up - $800</h3>
                 <p className="font-bold">Cardano Hackathon Vietnam 2025</p>
               </div>
             </div>
@@ -498,8 +498,9 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">1st Place - The Unexpected</h3>
+                <h3 className="text-xl font-black uppercase mb-2">1st Place - $35,000</h3>
                 <p className="font-bold">Aptos Collision Hackathon Global 2024</p>
+                <p className="text-sm mt-1">The Unexpected Track</p>
               </div>
             </div>
 
@@ -514,7 +515,7 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up - $750</h3>
                 <p className="font-bold">Polkadot Hackathon Vietnam 2024</p>
               </div>
             </div>
@@ -530,7 +531,7 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥉 2nd Runner-up - $1,500</h3>
                 <p className="font-bold">Algorand Hackathon Vietnam 2024</p>
               </div>
             </div>
@@ -546,8 +547,9 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥉 3rd Place - Gaming</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥉 3rd Place - $17,000</h3>
                 <p className="font-bold">Sui Overflow Global 2024 Hackathon</p>
+                <p className="text-sm mt-1">Gaming Track</p>
               </div>
             </div>
 
@@ -562,8 +564,9 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥈 2nd Place - Gaming</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥈 2nd Place - $20,000</h3>
                 <p className="font-bold">MovementLabs Olympus Hackathon 2024</p>
+                <p className="text-sm mt-1">Gaming Track</p>
               </div>
             </div>
 
@@ -578,8 +581,9 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥈 2nd Place - Tools & Public Good</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥈 2nd Place - $2,000</h3>
                 <p className="font-bold">Web3Hackfest Hackathon 2023</p>
+                <p className="text-sm mt-1">Tools & Public Good Track</p>
               </div>
             </div>
           </div>
