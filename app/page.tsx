@@ -3,7 +3,6 @@ import HackathonAwards from './components/HackathonAwards';
 import ThailandJourney from './components/ThailandJourney';
 import ProfessionalJourney from './components/ProfessionalJourney';
 import OpenSourceRepos from "./components/OpenSourceRepos";
-import GitHubFollowStats from "./components/GitHubFollowStats";
 
 export default function Portfolio() {
   return (
@@ -131,9 +130,6 @@ export default function Portfolio() {
                   >
                     📱 (+84) 918168311
                   </a>
-                </div>
-                <div className="mt-6">
-                  <GitHubFollowStats />
                 </div>
               </div>
             </div>
