@@ -21,7 +21,7 @@ const journeySteps: JourneyStep[] = [
     type: 'work',
     title: 'Software Engineer',
     period: '2024 - 2025',
-    description: 'Working as a full-time Software Engineer, contributing to enterprise-level projects and collaborating with international teams. Recognized for outstanding performance and teamwork.',
+    description: 'One of the most memorable experiences in my career journey! Working as a full-time Software Engineer at GFI, I had the opportunity to contribute to enterprise-level projects while collaborating with talented international teams. This period was invaluable for my professional growth - I learned extensively about production-grade software development, best practices in team collaboration, and the dynamics of working in a fast-paced tech environment. The knowledge and skills I gained during this time have been instrumental in shaping my approach to software engineering. Beyond the technical achievements, the mentorship and teamwork culture at GFI helped me develop both professionally and personally. Recognized for outstanding performance and teamwork excellence.',
     images: ['/gfi.jpg', '/gfi-2.jpg', '/gfi-awards.jpg', '/gfi-awards-2.jpg'],
     achievements: [
       '🏆 Team of the Year Award',
