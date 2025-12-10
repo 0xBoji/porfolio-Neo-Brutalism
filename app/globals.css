@@ -31,6 +31,17 @@ body {
   box-sizing: border-box;
 }
 
+/* Text Selection Color */
+::selection {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
 /* Neo-Brutalism Base Styles */
 .brutalist-card {
   border: 4px solid var(--border-black);
