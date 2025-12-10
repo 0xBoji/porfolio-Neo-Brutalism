@@ -201,11 +201,11 @@ export default function ProfessionalJourney() {
                   )}
 
                   {/* Navigation Buttons */}
-                  <div className="flex justify-between items-center mt-6 pt-4 border-t-4 border-black">
+                  <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-6 pt-4 border-t-4 border-black">
                     <button
                       onClick={(e) => handlePrevious(step.id, e)}
                       disabled={index === 0}
-                      className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                      className={`brutalist-btn px-6 py-3 flex items-center gap-2 w-full sm:w-auto justify-center ${
                         index === 0 
                           ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
                           : 'bg-[#FFE500] hover:bg-[#FFD700]'
@@ -217,14 +217,14 @@ export default function ProfessionalJourney() {
                       <span className="font-black">Previous</span>
                     </button>
                     
-                    <span className="text-sm font-bold">
+                    <span className="text-sm font-bold order-first sm:order-none">
                       Step {index + 1} of {journeySteps.length}
                     </span>
                     
                     <button
                       onClick={(e) => handleNext(step.id, e)}
                       disabled={index === journeySteps.length - 1}
-                      className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                      className={`brutalist-btn px-6 py-3 flex items-center gap-2 w-full sm:w-auto justify-center ${
                         index === journeySteps.length - 1
                           ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                           : 'bg-[#00D4FF] hover:bg-[#00B8E6]'

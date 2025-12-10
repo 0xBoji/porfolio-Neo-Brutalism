@@ -187,11 +187,11 @@ export default function ThailandJourney() {
                 )}
 
                 {/* Navigation Buttons */}
-                <div className="flex justify-between items-center mt-6 pt-4 border-t-4 border-black">
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-6 pt-4 border-t-4 border-black">
                   <button
                     onClick={(e) => handlePrevious(journeyDay.day, e)}
                     disabled={index === 0}
-                    className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                    className={`brutalist-btn px-6 py-3 flex items-center gap-2 w-full sm:w-auto justify-center ${
                       index === 0 
                         ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
                         : 'bg-[#FFE500] hover:bg-[#FFD700]'
@@ -203,14 +203,14 @@ export default function ThailandJourney() {
                     <span className="font-black">Previous</span>
                   </button>
                   
-                  <span className="text-sm font-bold">
+                  <span className="text-sm font-bold order-first sm:order-none">
                     Day {journeyDay.day} of 14
                   </span>
                   
                   <button
                     onClick={(e) => handleNext(journeyDay.day, e)}
                     disabled={index === journeyDays.length - 1}
-                    className={`brutalist-btn px-6 py-3 flex items-center gap-2 ${
+                    className={`brutalist-btn px-6 py-3 flex items-center gap-2 w-full sm:w-auto justify-center ${
                       index === journeyDays.length - 1
                         ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                         : 'bg-[#00D4FF] hover:bg-[#00B8E6]'
