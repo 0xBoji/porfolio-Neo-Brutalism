@@ -547,7 +547,7 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-black uppercase mb-2">🥉 3rd Place - $17,000</h3>
+                <h3 className="text-xl font-black uppercase mb-2">🥉 3rd Place - $17,000 + $15,000 AWS Credits</h3>
                 <p className="font-bold">Sui Overflow Global 2024 Hackathon</p>
                 <p className="text-sm mt-1">Gaming Track</p>
               </div>
