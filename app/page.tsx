@@ -475,7 +475,7 @@ export default function Portfolio() {
             <div className="brutalist-card bg-[#C77DFF] p-0 overflow-hidden">
               <div className="h-48 relative border-b-4 border-black">
                 <Image
-                  src="/cadano-hackathon-vn.png"
+                  src="/cardano-hackathon-vn.png"
                   alt="Cardano Hackathon Vietnam"
                   fill
                   className="object-cover"
