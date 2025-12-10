@@ -44,25 +44,43 @@ const journeyDays: JourneyDay[] = [
     day: 5,
     title: 'Day 5 at Bangkok',
     description: "Today was all about going places — just non-stop movement! We split into several teams to cover events for different chains like Polkadot, Edu chain, Near, Sui Walrus, and ICP. Building, gathering insights, and connecting took a toll on our energy.",
-    images: [],
+    images: [
+      '/sui-hacker-house-thailand-fiveday-1.png',
+      '/sui-hacker-house-thailand-fiveday-2.png',
+      '/sui-hacker-house-thailand-fiveday-3.png',
+      '/sui-hacker-house-thailand-fiveday-4.png',
+    ],
   },
   {
     day: 6,
     title: 'Day 6 at Bangkok',
     description: "A week full of side events! We've learned new concepts, heard passionate builders share about projects they're cooking up, and made it through half of our amazing Bangkok journey. Still excited for what's next!",
-    images: [],
+    images: [
+      '/sui-hacker-house-thailand-sixday-1.png',
+      '/sui-hacker-house-thailand-sixday-2.png',
+      '/sui-hacker-house-thailand-sixday-3.png',
+    ],
   },
   {
     day: 9,
     title: 'Day 9 at Bangkok',
     description: 'We joined Sui Connect, Bitcoin Hackathon and AI workshop. Just capturing some moments from the past few days.',
-    images: [],
+    images: [
+      '/sui-hacker-house-thailand-nineday-1.png',
+      '/sui-hacker-house-thailand-nineday-2.png',
+      '/sui-hacker-house-thailand-nineday-3.png',
+      '/sui-hacker-house-thailand-nineday-4.png',
+    ],
   },
   {
     day: 10,
     title: 'Day 10 at Bangkok',
     description: "The promise to bring 20 of us to Bangkok ended up with 12 of us actually here. Even though it cost quite a bit, this trip has been totally worth it! So many unforgettable memories!",
-    images: [],
+    images: [
+      '/sui-hacker-house-thailand-tenday-1.png',
+      '/sui-hacker-house-thailand-tenday-2.png',
+      '/sui-hacker-house-thailand-tenday-3.png',
+    ],
   },
   {
     day: 14,
