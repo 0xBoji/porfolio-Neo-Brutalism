@@ -444,7 +444,7 @@ export default function Portfolio() {
       <section id="thailand-journey" className="px-4 py-8 md:px-8 lg:px-16 scroll-mt-20 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
-            🌏 Hackathon Journey
+            🌏 Developer Connect Journey
           </h2>
           <ThailandJourney />
         </div>
