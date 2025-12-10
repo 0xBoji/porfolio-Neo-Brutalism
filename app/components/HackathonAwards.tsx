@@ -20,14 +20,6 @@ interface Hackathon {
 
 const hackathons: Hackathon[] = [
   {
-    id: 'saga-2025',
-    type: 'vietnam',
-    image: '/saga-hackathon-vn.png',
-    title: '🥇 Champion - $2,000',
-    name: 'Saga Hackathon Vietnam 2025',
-    bgColor: 'bg-[#FFE500]',
-  },
-  {
     id: 'hyperliquid-2025',
     type: 'global',
     image: '/hyperliquid-hackathon.png',
@@ -35,6 +27,14 @@ const hackathons: Hackathon[] = [
     name: 'Hyperliquid Hackathon Global 2025',
     subtitle: 'HyperLiquid SDK written by Swift',
     bgColor: 'bg-white',
+  },
+  {
+    id: 'saga-2025',
+    type: 'vietnam',
+    image: '/saga-hackathon-vn.png',
+    title: '🥇 Champion - $2,000',
+    name: 'Saga Hackathon Vietnam 2025',
+    bgColor: 'bg-[#FFE500]',
   },
   {
     id: 'aws-2025',
@@ -167,8 +167,18 @@ export default function HackathonAwards() {
         {filteredHackathons.map((hackathon) => (
           <div
             key={hackathon.id}
-            className={`brutalist-card ${hackathon.bgColor} p-0 overflow-hidden`}
+            className={`brutalist-card ${hackathon.bgColor} p-0 overflow-hidden relative`}
           >
+            {/* Vietnam Flag Circle for Vietnamese hackathons */}
+            {hackathon.type === 'vietnam' && (
+              <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-full border-4 border-black overflow-hidden bg-red-600 flex items-center justify-center">
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <svg viewBox="0 0 30 30" className="w-full h-full">
+                    <polygon points="15,3 18,12 27,12 20,17 23,26 15,21 7,26 10,17 3,12 12,12" fill="#FFD700"/>
+                  </svg>
+                </div>
+              </div>
+            )}
             <div
               className={`h-48 relative border-b-4 border-black ${
                 hackathon.useGradient
