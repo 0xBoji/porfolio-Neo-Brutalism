@@ -86,7 +86,7 @@ const journeyDays: JourneyDay[] = [
     day: 14,
     title: 'Day 14 - Journey Complete',
     description: "Back to Vietnam with incredible achievements! After two intense weeks of learning, building, and networking at the Sui Hacker House during Devcon7, we returned home not only with a $2,000 prize but with invaluable experience. We connected with global builders, explored cutting-edge Web3 technologies including Walrus, ICP, and Sui, and proved that age is just a number in this space. This journey transformed us from participants into confident builders ready to shape the future of blockchain technology in Vietnam and beyond.",
-    images: ['/sui-hacker-house-thailand-fourteenday-1.png'],
+    images: ['/sui-hacker-house-thailand-fourteenday-1.png', '/sui-hacker-house-thailand-fourteenday-2.png'],
   },
 ];
 
