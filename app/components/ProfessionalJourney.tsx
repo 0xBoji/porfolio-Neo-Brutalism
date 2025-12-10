@@ -16,6 +16,15 @@ interface JourneyStep {
 
 const journeySteps: JourneyStep[] = [
   {
+    id: 'aws-christmas-2024',
+    company: 'AWS Vietnam',
+    type: 'visit',
+    title: 'Christmas Networking Event',
+    period: 'December 2024',
+    description: 'Attended the AWS Vietnam Christmas celebration, a prestigious networking event bringing together cloud professionals, solution architects, and tech leaders from across the region. This was an incredible opportunity to connect with AWS community members, share experiences about cloud architecture and serverless solutions, and learn about the latest AWS innovations directly from AWS technical experts. The event featured engaging discussions about cloud migration strategies, best practices for building scalable applications, and insights into emerging technologies like AI/ML on AWS. Beyond the technical conversations, it was inspiring to meet fellow developers who are passionate about cloud computing and to exchange ideas about career growth in the cloud engineering field. The festive atmosphere combined with deep technical discussions made it a memorable experience that strengthened my connection to the AWS community in Vietnam.',
+    images: ['/aws-office.png'],
+  },
+  {
     id: 'gfi-work',
     company: 'GFI',
     type: 'work',
