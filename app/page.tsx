@@ -3,6 +3,7 @@ import HackathonAwards from './components/HackathonAwards';
 import ThailandJourney from './components/ThailandJourney';
 import ProfessionalJourney from './components/ProfessionalJourney';
 import OpenSourceRepos from "./components/OpenSourceRepos";
+import GitHubStats from "./components/GitHubStats";
 
 export default function Portfolio() {
   return (
@@ -504,7 +505,10 @@ export default function Portfolio() {
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase">
             💻 Open Source Contributions
           </h2>
-          <OpenSourceRepos />
+          <div className="space-y-8">
+            <GitHubStats />
+            <OpenSourceRepos />
+          </div>
         </div>
       </section>
 
